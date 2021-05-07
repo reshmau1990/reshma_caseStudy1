@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+ 
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        #logInform{
+            background-color:lightgrey;
+            padding: 2%;
+            /* padding-right: 10px; */
+            /* width: 260px; */
+            margin-left: 38%;
+            margin-right: 38%;
+            margin-top: 10%;
+        }
+        h2{
+          text-align: center;
+          font-family: 'Times New Roman', Times, serif;
+        }
+        #submit{
+          height:27px; width:176px; background-color:rgb(130, 149, 209);
+        }
+    </style>
+</head>
+<body>
+ 
+        <form action="todo.html" id="logInform">
+            <h2><b>To-Do LogIn</b></h2> 
+            <br>
+            <label for="InputUsername"><b>Username</b></label> 
+            <input type="text" id="username" placeholder="enter username" required>
+            <br>
+            <br>
+            <label for="InputPassword"><b>Password</b></label>
+            <input type="password" id="password" placeholder="enter password" required>
+            <br>
+            <br>
+            <!-- <center><input type="submit" id="submit" name="Login"/></center>  -->
+            <center><button id="submit">Login</button></center>
+            <center><label id="display"></label><br></center>
+        </form>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
